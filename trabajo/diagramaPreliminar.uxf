@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>11</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>308</x>
-      <y>0</y>
-      <w>220</w>
-      <h>264</h>
+      <x>261</x>
+      <y>81</y>
+      <w>180</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes>Cliente
 -
@@ -29,10 +29,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1001</x>
-      <y>385</y>
-      <w>231</w>
-      <h>231</h>
+      <x>1062</x>
+      <y>189</y>
+      <w>189</w>
+      <h>189</h>
     </coordinates>
     <panel_attributes>TipoAvión
 -
@@ -52,10 +52,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>517</x>
-      <y>341</y>
-      <w>253</w>
-      <h>308</h>
+      <x>432</x>
+      <y>369</y>
+      <w>261</w>
+      <h>306</h>
     </coordinates>
     <panel_attributes>Reserva
 -
@@ -72,9 +72,13 @@
 +estDestino(destino: string)
 +estFechaPartida(fecha: date)
 +estFechaRegreso(fecha: date)
-+obtPasaje()Pasaje
-+obtCliente()Cliente
-+obtAvion()Avion
++obtPasaje():Pasaje
++obtCliente():Cliente
++obtAvion():Avion
++agregarPasaje(pas: Pasaje)
++agregarPasaje(pas: Pasaje, cant: int): void
++quitarPasaje(pas: Pasaje): void
++quitarPasaje(pas: Pasaje, cant: int): void
 
 
 </panel_attributes>
@@ -83,10 +87,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>924</x>
-      <y>88</y>
-      <w>231</w>
-      <h>253</h>
+      <x>720</x>
+      <y>171</y>
+      <w>189</w>
+      <h>207</h>
     </coordinates>
     <panel_attributes>Avión
 -
@@ -95,9 +99,9 @@
 -descripcion: string
 -motorAvion: string
 -
-+obtNombre()string
-+obtDescripcion()string
-+obtMotor()string
++obtNombre():string
++obtDescripcion():string
++obtMotor():string
 +estNombre(nombre: string)
 +estDescripcion(descrip: string)
 </panel_attributes>
@@ -106,23 +110,23 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1111</x>
-      <y>330</y>
-      <w>44</w>
-      <h>77</h>
+      <x>900</x>
+      <y>252</y>
+      <w>180</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=*</panel_attributes>
-    <additional_attributes>10.0;10.0;20.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>913</x>
-      <y>660</y>
-      <w>231</w>
-      <h>198</h>
+      <x>729</x>
+      <y>639</y>
+      <w>189</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>Pasaje
 -
@@ -141,10 +145,10 @@ m2=*</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1287</x>
-      <y>627</y>
-      <w>220</w>
-      <h>209</h>
+      <x>1062</x>
+      <y>639</y>
+      <w>180</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>TipoPasaje
 -
@@ -162,37 +166,37 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1133</x>
-      <y>704</y>
-      <w>176</w>
-      <h>55</h>
+      <x>909</x>
+      <y>684</y>
+      <w>171</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=*</panel_attributes>
-    <additional_attributes>10.0;20.0;140.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>253</y>
-      <w>110</w>
-      <h>330</h>
+      <x>360</x>
+      <y>288</y>
+      <w>90</w>
+      <h>288</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=*
 m2=1
 </panel_attributes>
-    <additional_attributes>80.0;270.0;10.0;270.0;10.0;10.0</additional_attributes>
+    <additional_attributes>80.0;290.0;10.0;290.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>33</x>
-      <y>275</y>
-      <w>220</w>
-      <h>253</h>
+      <x>36</x>
+      <y>324</y>
+      <w>180</w>
+      <h>207</h>
     </coordinates>
     <panel_attributes>Acceso
 -
@@ -215,37 +219,164 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>132</x>
-      <y>88</y>
-      <w>198</w>
-      <h>209</h>
+      <x>117</x>
+      <y>153</y>
+      <w>162</w>
+      <h>189</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=1
 m2=*
 </panel_attributes>
-    <additional_attributes>160.0;20.0;10.0;20.0;10.0;170.0</additional_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0;10.0;190.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>627</x>
-      <y>165</y>
-      <w>319</w>
-      <h>198</h>
+      <x>522</x>
+      <y>234</y>
+      <w>216</w>
+      <h>153</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;160.0;10.0;10.0;270.0;10.0</additional_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0;220.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>649</x>
-      <y>638</y>
-      <w>286</w>
-      <h>176</h>
+      <x>540</x>
+      <y>666</y>
+      <w>207</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;140.0;240.0;140.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0;210.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>81</x>
+      <y>585</y>
+      <w>189</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>DetalleReserva
+-
+-idDetalle: int {autonumérico}
+-cantidad:int
+-
++obtId():int
++obtPasaje():Pasaje
++obtReserva():Reserva
++obtCantidad():int
++estCantidad(cantidad: int)
++estReserva(reserva: Reserva)
++estPasaje(pasaje : Pasaje)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>261</x>
+      <y>621</y>
+      <w>189</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=*</panel_attributes>
+    <additional_attributes>190.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>63</y>
+      <w>288</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>EstadoReserva
+-
+-idEstado: int {autonumérico}
+-precioEstado: double
+-
++calcularPrecio(precio: double, fecha: date): void
++estNuevoPrecio(precio: double): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>819</x>
+      <y>405</y>
+      <w>198</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>Vuelo
+-
+-idVuelo: int {autonumérico}
+-fechaVuelo: date
+-horaVuelo: date
+-aeropuerto: Aeropuerto
+-
++obtFechaVuelo():date
++obtHoraVuelo():date
++obtAeropuerto():Aeropuerto
++obtReserva():Reserva
++obtAvion():Avion
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>684</x>
+      <y>459</y>
+      <w>153</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+m1=*
+m2=1
+</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1098</x>
+      <y>432</y>
+      <w>189</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Aeropuerto
+-
+-idAeropuerto: int {numerico}
+-pais: string
+-ciudad: string
+-direccion: string
+-
++estPais(pais: string):void
++estDireccion(dir: string): void
++estCiudad(ciudad: string): void
++obtPais():string
++obtCiudad():string
++obtDireccion():string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1008</x>
+      <y>495</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
   </element>
 </diagram>
