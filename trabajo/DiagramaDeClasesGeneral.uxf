@@ -110,7 +110,7 @@
       <x>774</x>
       <y>27</y>
       <w>225</w>
-      <h>162</h>
+      <h>180</h>
     </coordinates>
     <panel_attributes>Avión
 -
@@ -124,21 +124,9 @@
 +obtMotor():string
 +estNombre(nombre: string): void
 +estDescripcion(descrip: string): void
++estMotor(m: string): void
 </panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>990</x>
-      <y>81</y>
-      <w>180</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m1=*
-m2=1</panel_attributes>
-    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -577,5 +565,18 @@ m2=*</panel_attributes>
 m1=*
 m2=1</panel_attributes>
     <additional_attributes>10.0;210.0;10.0;10.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>117</y>
+      <w>180</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
   </element>
 </diagram>
