@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>261</x>
+      <x>234</x>
       <y>9</y>
       <w>243</w>
       <h>315</h>
@@ -36,10 +36,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1116</x>
-      <y>18</y>
-      <w>207</w>
-      <h>216</h>
+      <x>1152</x>
+      <y>0</y>
+      <w>225</w>
+      <h>306</h>
     </coordinates>
     <panel_attributes>TipoAvión
 -
@@ -47,26 +47,32 @@
 -nombreTipo: string
 -descripcion: string
 -autonomia: int
--distribucionAsientos: int
+-cantidadAsientosEconomico: int
+-cantidadAsientosEjecutivo: int
+-cantidadAsientosEstandar: int
 -
 +obtNombreTipo()string
 +obtDescripción()string
 +obtAutonomia()int
-+obtDistribucion()int
++obtCantAsienEjecutivo(): int
++obtCantAsienEstandar(): int
++obtCantAsienEeconomico(): int
 +estDescripcion(d: string): void
 +estNombre(n: string): void
 +estAutonomia(a: int): void
-+estDistribucion(d: int): void
++estCantAsienEjecutivo(c: int): void
++estCantAsienEstandar(c: int): void
++estCantAsienEconomico(c: int): void
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>522</x>
+      <x>495</x>
       <y>189</y>
       <w>261</w>
-      <h>306</h>
+      <h>333</h>
     </coordinates>
     <panel_attributes>Reserva
 -
@@ -90,6 +96,9 @@
 +agregarPasaje(pas: Pasaje, cant: int): void
 +quitarPasaje(pas: Pasaje): void
 +quitarPasaje(pas: Pasaje, cant: int): void
++estPago(p: Pago): void
++obtPago(): Pago
+
 
 
 </panel_attributes>
@@ -98,7 +107,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>801</x>
+      <x>774</x>
       <y>27</y>
       <w>225</w>
       <h>162</h>
@@ -121,20 +130,20 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1017</x>
-      <y>99</y>
-      <w>117</w>
+      <x>990</x>
+      <y>81</y>
+      <w>180</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=*
 m2=1</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>828</x>
+      <x>801</x>
       <y>504</y>
       <w>216</w>
       <h>153</h>
@@ -156,7 +165,7 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>27</x>
+      <x>0</x>
       <y>153</y>
       <w>216</w>
       <h>207</h>
@@ -182,7 +191,7 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>144</x>
+      <x>117</x>
       <y>117</y>
       <w>135</w>
       <h>54</h>
@@ -196,8 +205,8 @@ m2=*
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>153</x>
-      <y>405</y>
+      <x>90</x>
+      <y>378</y>
       <w>225</w>
       <h>180</h>
     </coordinates>
@@ -218,20 +227,20 @@ m2=*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>468</y>
-      <w>171</w>
+      <x>306</x>
+      <y>396</y>
+      <w>207</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=*</panel_attributes>
-    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>210.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>918</x>
+      <x>891</x>
       <y>243</y>
       <w>243</w>
       <h>243</h>
@@ -247,19 +256,18 @@ m2=*</panel_attributes>
 +obtAeropuerto():Aeropuerto
 +obtReserva():Reserva
 +obtAvion():Avion
-+obtAerolinea(): Aerolinea
 +estFechaVuelo(fecha: date): void
 +estHoraVuelo(hora: date): void
 +estAeropuerto(aer: Aeropuerto): void
 +estAvion(a: Avion): void
-+estAerolinea(aerolinea: Aerolinea): void 
+
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>774</x>
+      <x>747</x>
       <y>333</y>
       <w>162</w>
       <h>45</h>
@@ -273,8 +281,8 @@ m2=1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1341</x>
-      <y>90</y>
+      <x>1386</x>
+      <y>189</y>
       <w>189</w>
       <h>198</h>
     </coordinates>
@@ -298,20 +306,20 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1152</x>
-      <y>279</y>
-      <w>297</w>
-      <h>54</h>
+      <x>1125</x>
+      <y>360</y>
+      <w>279</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=*
 m2=1</panel_attributes>
-    <additional_attributes>10.0;30.0;310.0;30.0;310.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;290.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>999</x>
+      <x>972</x>
       <y>756</y>
       <w>171</w>
       <h>144</h>
@@ -332,7 +340,7 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>594</x>
+      <x>567</x>
       <y>711</y>
       <w>198</w>
       <h>153</h>
@@ -353,7 +361,7 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>504</x>
+      <x>477</x>
       <y>558</y>
       <w>189</w>
       <h>117</h>
@@ -373,7 +381,7 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>333</x>
+      <x>306</x>
       <y>315</y>
       <w>207</w>
       <h>81</h>
@@ -386,22 +394,22 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>486</y>
+      <x>603</x>
+      <y>513</y>
       <w>216</w>
-      <h>90</h>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=*
 m2=1
 
 </panel_attributes>
-    <additional_attributes>220.0;70.0;10.0;70.0;10.0;10.0</additional_attributes>
+    <additional_attributes>220.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>864</x>
+      <x>837</x>
       <y>396</y>
       <w>72</w>
       <h>126</h>
@@ -414,7 +422,7 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1017</x>
+      <x>990</x>
       <y>162</y>
       <w>72</w>
       <h>99</h>
@@ -425,7 +433,7 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>783</x>
+      <x>756</x>
       <y>648</y>
       <w>99</w>
       <h>189</h>
@@ -436,7 +444,7 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>927</x>
+      <x>900</x>
       <y>648</y>
       <w>90</w>
       <h>198</h>
@@ -448,7 +456,7 @@ m2=*</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1170</x>
+      <x>1143</x>
       <y>603</y>
       <w>171</w>
       <h>144</h>
@@ -469,7 +477,7 @@ m2=*</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1170</x>
+      <x>1143</x>
       <y>441</y>
       <w>171</w>
       <h>144</h>
@@ -490,7 +498,7 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1035</x>
+      <x>1008</x>
       <y>540</y>
       <w>153</w>
       <h>36</h>
@@ -502,7 +510,7 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1035</x>
+      <x>1008</x>
       <y>630</y>
       <w>153</w>
       <h>36</h>
@@ -514,7 +522,7 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>684</x>
+      <x>657</x>
       <y>594</y>
       <w>162</w>
       <h>36</h>
@@ -527,30 +535,47 @@ m2=*</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1323</x>
-      <y>333</y>
-      <w>189</w>
-      <h>99</h>
+      <x>198</x>
+      <y>630</y>
+      <w>252</w>
+      <h>279</h>
     </coordinates>
-    <panel_attributes>Aerolínea
+    <panel_attributes>Pago
 -
 -id: int {autonumérico}
--nombre: string
+-nombreTarjeta: string
+-nroTarjeta: string
+-titularTarjeta: string
+-fechaVenc: date
+-codSeguridad: int
 -
++estNroTarjeta(nro: string): void
++estTitularTarjeta(tit: string): void
++estFechaVenc(fecha: date): void
++estCodSeguridad(cod: int): void
 +estNombre(n: string): void
++obtNroTarjeta(): string
++obtTitular(): string
++obtFechaVenc(): date
++obtCodSeguridad(): int
++obtNombre(): string
 +obtId(): int
-+obtNombre(): string</panel_attributes>
+
+
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1152</x>
-      <y>387</y>
-      <w>189</w>
-      <h>27</h>
+      <x>333</x>
+      <y>441</y>
+      <w>180</w>
+      <h>207</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>190.0;10.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;210.0;10.0;10.0;180.0;10.0</additional_attributes>
   </element>
 </diagram>
