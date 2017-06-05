@@ -1,7 +1,7 @@
 package com.grupo3.reservaPasajes.pasaje;
 
 public class Ejecutivo extends Pasaje{
-
+	//Clase hecha por Jorge Cáceres
 	private long id;
 	private String descripcion;
 	

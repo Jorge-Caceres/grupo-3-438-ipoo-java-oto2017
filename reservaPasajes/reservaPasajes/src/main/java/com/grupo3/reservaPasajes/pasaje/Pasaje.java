@@ -3,7 +3,7 @@ package com.grupo3.reservaPasajes.pasaje;
 import com.grupo3.reservaPasajes.empresa.Empresa;
 
 public abstract class Pasaje {
-
+//Clase hecha por Jorge Cáceres
 	private Long id;
 	private String nroBoleto;
 	private Servicio servicio;

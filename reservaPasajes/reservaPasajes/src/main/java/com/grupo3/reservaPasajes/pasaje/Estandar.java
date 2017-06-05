@@ -1,7 +1,7 @@
 package com.grupo3.reservaPasajes.pasaje;
 
 public class Estandar extends Pasaje {
-
+	//Clase hecha por Jorge Cáceres
 	private Long id;
 	private String descripcion;
 	
