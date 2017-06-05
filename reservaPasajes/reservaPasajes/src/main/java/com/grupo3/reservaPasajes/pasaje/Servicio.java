@@ -4,7 +4,7 @@ public class Servicio {
 	
 	private Long id;
 	private String nombre;
-	private String descripción;
+	private String descripcion;
 	private Double costo;
 	
 	public Servicio(){
@@ -13,11 +13,11 @@ public class Servicio {
 	
 	
 
-	public Servicio(Long id, String nombre, String descripción, Double costo) {
+	public Servicio(Long id, String nombre, String descripcion, Double costo) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
-		this.descripción = descripción;
+		this.descripcion = descripcion;
 		this.costo = costo;
 	}
 
@@ -31,8 +31,8 @@ public class Servicio {
 		return nombre;
 	}
 
-	public String getDescripción() {
-		return descripción;
+	public String getDescripcion() {
+		return descripcion;
 	}
 
 	public Double getCosto() {
@@ -47,8 +47,8 @@ public class Servicio {
 		this.nombre = nombre;
 	}
 
-	public void setDescripción(String descripción) {
-		this.descripción = descripción;
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 
 	public void setCosto(Double costo) {
