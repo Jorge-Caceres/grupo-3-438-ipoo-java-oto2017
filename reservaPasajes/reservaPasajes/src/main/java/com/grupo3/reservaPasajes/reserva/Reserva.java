@@ -4,6 +4,8 @@ import java.util.Calendar;
 import java.util.Date;
 
 import com.grupo3.reservaPasajes.cliente.Cliente;
+import com.grupo3.reservaPasajes.pago.LugarCobro;
+import com.grupo3.reservaPasajes.pago.Pago;
 import com.grupo3.reservaPasajes.pasaje.Pasaje;
 import com.grupo3.reservaPasajes.pasaje.PrecioPasaje;
 import com.grupo3.reservaPasajes.vuelo.Vuelo;
@@ -21,7 +23,8 @@ public class Reserva {
 	private Vuelo vuelo;
 	private Pasaje pasaje;
 	private PrecioPasaje precioPasaje;
-	//private Pago pago;
+	private Pago pago;
+	private LugarCobro lugarCobro;
 	
 	
 	//constructor vacío
@@ -31,8 +34,12 @@ public class Reserva {
 	}
 
 
+	
+
+
 	public Reserva(long id, Date fechaReserva, double importe, String origen, String destino, Date fechaPartida,
-			Date fechaRegreso, Cliente cliente, Vuelo vuelo, Pasaje pasaje, PrecioPasaje precioPasaje) {
+			Date fechaRegreso, Cliente cliente, Vuelo vuelo, Pasaje pasaje, PrecioPasaje precioPasaje, Pago pago,
+			LugarCobro lugarCobro) {
 		super();
 		this.id = id;
 		this.fechaReserva = fechaReserva;
@@ -45,8 +52,12 @@ public class Reserva {
 		this.vuelo = vuelo;
 		this.pasaje = pasaje;
 		this.precioPasaje = precioPasaje;
-		//this.pago = pago;
+		this.pago = pago;
+		this.lugarCobro = lugarCobro;
 	}
+
+
+
 
 
 	public long getId() {
@@ -161,5 +172,45 @@ public class Reserva {
 		calendar.add(Calendar.DATE, 10);
 		
 		return calendar.getTime();
+	}
+
+
+	public Pago getPago() {
+		return pago;
+	}
+
+
+	public LugarCobro getLugarCobro() {
+		return lugarCobro;
+	}
+
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+
+	public void setVuelo(Vuelo vuelo) {
+		this.vuelo = vuelo;
+	}
+
+
+	public void setPasaje(Pasaje pasaje) {
+		this.pasaje = pasaje;
+	}
+
+
+	public void setPrecioPasaje(PrecioPasaje precioPasaje) {
+		this.precioPasaje = precioPasaje;
+	}
+
+
+	public void setPago(Pago pago) {
+		this.pago = pago;
+	}
+
+
+	public void setLugarCobro(LugarCobro lugarCobro) {
+		this.lugarCobro = lugarCobro;
 	}
 }

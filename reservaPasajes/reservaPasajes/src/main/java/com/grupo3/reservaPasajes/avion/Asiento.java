@@ -1,7 +1,7 @@
 package com.grupo3.reservaPasajes.avion;
 
 public class Asiento {
-	//Clase hecha por Josías Noguera
+	//Clase hecha por JosÃ­as Noguera
 		private int nro;
 		private String tipo;
 		

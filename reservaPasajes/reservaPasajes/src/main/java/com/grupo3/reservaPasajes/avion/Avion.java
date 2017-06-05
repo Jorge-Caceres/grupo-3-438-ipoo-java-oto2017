@@ -1,5 +1,7 @@
 package com.grupo3.reservaPasajes.avion;
 
+import com.grupo3.reservaPasajes.vuelo.Vuelo;
+
 public class Avion {
 	//Clase hecha por Josías Noguera
 		private TipoAvion tipodeavion;
