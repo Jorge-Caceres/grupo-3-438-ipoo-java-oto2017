@@ -45,5 +45,6 @@ public class PrecioPasaje {
 		this.precio = precio;
 	}
 
+
 	
 }

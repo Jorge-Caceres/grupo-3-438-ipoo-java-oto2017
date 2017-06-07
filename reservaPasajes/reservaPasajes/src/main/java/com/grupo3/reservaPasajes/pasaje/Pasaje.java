@@ -8,10 +8,8 @@ public abstract class Pasaje {
 	private String nroBoleto;
 	private Servicio servicio;
 	private Empresa empresa;
+	private PrecioPasaje precioP;
 	
-	public Pasaje(){
-		
-	}
 	
 	
 	abstract Servicio getServicios(Servicio servicio);

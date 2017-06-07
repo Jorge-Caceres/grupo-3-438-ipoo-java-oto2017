@@ -466,7 +466,7 @@ m2=*</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1143</x>
-      <y>441</y>
+      <y>450</y>
       <w>171</w>
       <h>144</h>
     </coordinates>
@@ -489,11 +489,11 @@ m2=*</panel_attributes>
       <x>1008</x>
       <y>540</y>
       <w>153</w>
-      <h>36</h>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 </panel_attributes>
-    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;150.0;30.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>

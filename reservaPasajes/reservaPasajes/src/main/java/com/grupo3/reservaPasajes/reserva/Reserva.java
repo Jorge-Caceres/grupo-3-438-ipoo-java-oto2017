@@ -25,6 +25,8 @@ public class Reserva {
 	private PrecioPasaje precioPasaje;
 	private Pago pago;
 	private LugarCobro lugarCobro;
+	private PrecioPasaje precioP;
+	
 	
 	
 	//constructor vacío
@@ -37,9 +39,12 @@ public class Reserva {
 	
 
 
+
+
+
 	public Reserva(long id, Date fechaReserva, double importe, String origen, String destino, Date fechaPartida,
 			Date fechaRegreso, Cliente cliente, Vuelo vuelo, Pasaje pasaje, PrecioPasaje precioPasaje, Pago pago,
-			LugarCobro lugarCobro) {
+			LugarCobro lugarCobro, PrecioPasaje precioP) {
 		super();
 		this.id = id;
 		this.fechaReserva = fechaReserva;
@@ -54,7 +59,11 @@ public class Reserva {
 		this.precioPasaje = precioPasaje;
 		this.pago = pago;
 		this.lugarCobro = lugarCobro;
+		this.precioP = precioP;
 	}
+
+
+
 
 
 
@@ -172,6 +181,7 @@ public class Reserva {
 		calendar.add(Calendar.DATE, 10);
 		
 		return calendar.getTime();
+		
 	}
 
 
@@ -212,5 +222,27 @@ public class Reserva {
 
 	public void setLugarCobro(LugarCobro lugarCobro) {
 		this.lugarCobro = lugarCobro;
+	}
+
+
+
+
+
+
+
+
+	public PrecioPasaje getPrecioP() {
+		return precioP;
+	}
+
+
+
+
+
+
+
+
+	public void setPrecioP(PrecioPasaje precioP) {
+		this.precioP = precioP;
 	}
 }

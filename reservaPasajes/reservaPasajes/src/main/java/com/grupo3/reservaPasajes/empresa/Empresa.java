@@ -4,12 +4,12 @@ public class Empresa {
       private long id;
       private String nombre;
       
-      //constructor vacÌo
+      //constructor vac√≠o
       public Empresa(){
-    	  
+      
       }
       
-      //constructor con par·metros
+      //constructor con par√°metros
       public Empresa(long id, String nombre) {
   		super();
   		this.id = id;
